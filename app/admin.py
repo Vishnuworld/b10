@@ -6,3 +6,4 @@ from .models import Employee, Person, Profile, Address, CarModel, FuelType
 
 admin.site.register([Employee, Person, Profile, Address, CarModel, FuelType])
 
+print("in admin.py - vishnu")
