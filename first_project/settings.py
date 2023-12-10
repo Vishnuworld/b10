@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'order',
 ]
 
 MIDDLEWARE = [
@@ -85,16 +86,16 @@ import configparser
 
 
 config = configparser.ConfigParser()
-config.read(r'E:\Python-B10\Files\Django_Projects\first_project\first_project\database.conf')
+config.read(r'D:\Sheetal\Python\b10\first_project\database.conf')
 
 DATABASES = {
     'default': {
-        'ENGINE': config.get("database", "ENGINE"), 
-        'NAME': config.get("database", "NAME"),
-        'USER': config.get("database", "USER"),
-        'PASSWORD': config.get("database", "PASSWORD"),
-        'HOST': config.get("database", "HOST"),   # Or an IP Address that your DB is hosted on
-        'PORT': config.get("database", "PORT"),
+        'ENGINE': config.get("database1", "ENGINE"), 
+        'NAME': config.get("database1", "NAME"),
+        'USER': config.get("database1", "USER"),
+        'PASSWORD': config.get("database1", "PASSWORD"),
+        'HOST': config.get("database1", "HOST"),   # Or an IP Address that your DB is hosted on
+        'PORT': config.get("database1", "PORT"),
     }
 }
 
