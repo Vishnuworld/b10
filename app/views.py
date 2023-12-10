@@ -15,7 +15,9 @@ def homepage(request):
 
 
 
-
+def welcome(request):
+    '''added by sheetal'''
+    pass
 
 
 
